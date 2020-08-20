@@ -1,0 +1,72 @@
+@client.command()
+@commands.has_any_role( 703596629894365209 )
+async def mc_unfrac(ctx, member:discord.Member):
+	thhchannel = ctx.message.channel
+	ttttt = client.get_channel(703596630892478510)
+	rolestmoder = ctx.guild.get_role(703596629894365210)
+	role_fbi = ctx.guild.get_role(703596629860548644)
+	role_lspd = ctx.guild.get_role(703596629860548643)
+	role_sfpd = ctx.guild.get_role(703596629860548642)
+	role_lvpd = ctx.guild.get_role(703596629860548641)
+	role_rcpd = ctx.guild.get_role(703596629860548640)
+	role_pravo = ctx.guild.get_role(703596629860548639)
+	role_cb = ctx.guild.get_role(703596629860548638)
+	role_lsa = ctx.guild.get_role(703596629856616457)
+	role_sfa = ctx.guild.get_role(703596629856616456)
+	role_hsp = ctx.guild.get_role(703596629856616455)
+	role_bls = ctx.guild.get_role(703596629856616454)
+	role_bsf = ctx.guild.get_role(703596629856616453)
+	role_blv = ctx.guild.get_role(703596629856616452)
+	role_smils = ctx.guild.get_role(703596629856616451)
+	role_smisf = ctx.guild.get_role(703596629856616450)
+	role_smilv = ctx.guild.get_role(703596629856616449)
+	role_ash = ctx.guild.get_role(703596629856616448)
+	role_rm = ctx.guild.get_role(703596629848096826)
+	role_yk = ctx.guild.get_role(703596629848096825)
+	role_lcn = ctx.guild.get_role(703596629848096824)
+	role_wmc = ctx.guild.get_role(703596629848096823)
+	if thhchannel == ttttt:
+		yvedom = await ctx.send(embed = discord.Embed(description = f'{ctx.author.mention} запрашивает снятие роль с пользователя {member.mention} просьба рассмотреть {rolestmoder.mention} запрос максимально быстро!', color = random.choice(colors)))
+		control_emojis = ["✅", "❎"]
+		for e in control_emojis:
+			await yvedom.add_reaction(e)
+
+
+		def check(reaction, user):
+			return user.bot == False  and reaction.message.id == yvedom.id and (str(reaction) in control_emojis) and rolestmoder in user.roles
+
+		reaction, user = await client.wait_for("reaction_add", check = check)
+
+		if str(reaction) == "✅":
+			await ctx.send(embed = discord.Embed(description = f"{ctx.author.mention}, Ваш запрос на снятие ролей с пользователя {member.mention} был одобрен! Роли фракций были сняты.", color = random.choice(colors)))
+			await member.remove_roles(role_fbi)
+			await member.remove_roles(role_lspd)
+			await member.remove_roles(role_lvpd)
+			await member.remove_roles(role_sfpd)
+			await member.remove_roles(role_rcpd)
+			await member.remove_roles(role_pravo)
+			await member.remove_roles(role_cb)
+			await member.remove_roles(role_lsa)
+			await member.remove_roles(role_sfa)
+			await member.remove_roles(role_hsp)
+			await member.remove_roles(role_bls)
+			await member.remove_roles(role_bsf)
+			await member.remove_roles(role_blv)
+			await member.remove_roles(role_smils)
+			await member.remove_roles(role_smisf)
+			await member.remove_roles(role_smilv)
+			await member.remove_roles(role_ash)
+			await member.remove_roles(role_yk)
+			await member.remove_roles(role_lcn)
+			await member.remove_roles(role_wmc)
+			await member.remove_roles(role_rm)
+			await asyncio.sleep(60)
+			await yvedom.delete()
+			await ctx.message.delete()
+		else:
+			await ctx.send(embed = discord.Embed(description = f"{ctx.author.mention}, Ваш запрос на снятие ролей {member.mention} был отклонен модератором.", color = random.choice(colors)))
+			await asyncio.sleep(60)
+			await yvedom.delete()
+			await ctx.message.delete()
+	else:
+		pass
