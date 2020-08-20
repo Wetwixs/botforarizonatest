@@ -1,0 +1,1439 @@
+@client.command()
+async def role_lspd(ctx):
+	thhchannel = ctx.message.channel
+	ttttt = client.get_channel(741325950222073916)
+	rolestmoder = ctx.guild.get_role(703596629894365210)
+	role_lspd = ctx.guild.get_role(703596629860548643)
+	role_sfpd = ctx.guild.get_role(703596629860548642)
+	role_lvpd = ctx.guild.get_role(703596629860548641)
+	role_rcpd = ctx.guild.get_role(703596629860548640)
+	role_pravo = ctx.guild.get_role(703596629860548639)
+	role_cb = ctx.guild.get_role(703596629860548638)
+	role_lsa = ctx.guild.get_role(703596629856616457)
+	role_sfa = ctx.guild.get_role(703596629856616456)
+	role_hsp = ctx.guild.get_role(703596629856616455)
+	role_bls = ctx.guild.get_role(703596629856616454)
+	role_bsf = ctx.guild.get_role(703596629856616453)
+	role_blv = ctx.guild.get_role(703596629856616452)
+	role_smils = ctx.guild.get_role(703596629856616451)
+	role_smisf = ctx.guild.get_role(703596629856616450)
+	role_smilv = ctx.guild.get_role(703596629856616449)
+	role_ash = ctx.guild.get_role(703596629856616448)
+	role_rm = ctx.guild.get_role(703596629848096826)
+	role_yk = ctx.guild.get_role(703596629848096825)
+	role_lcn = ctx.guild.get_role(703596629848096824)
+	role_wmc = ctx.guild.get_role(703596629848096823)
+	if thhchannel == ttttt:
+		yvedom = await ctx.send(f'{ctx.author.mention} запрашивает роль {role_lspd.mention} просьба рассмотреть {rolestmoder.mention} запрос максимально быстро!')
+		control_emojis = ["✅", "❎"]
+		for e in control_emojis:
+			await yvedom.add_reaction(e)
+
+
+		def check(reaction, user):
+			return user.bot == False  and reaction.message.id == yvedom.id and (str(reaction) in control_emojis) and rolestmoder in user.roles
+
+		reaction, user = await client.wait_for("reaction_add", check = check)
+
+		if str(reaction) == "✅":
+			await ctx.send(f"{ctx.author.mention}, Ваш запрос на получение роли {role_lspd.mention} был одобрен! Роли других фракций были сняты.")
+			await ctx.author.add_roles(role_lspd)
+			await ctx.author.remove_roles(role_sfpd)
+			await ctx.author.remove_roles(role_lvpd)
+			await ctx.author.remove_roles(role_rcpd)
+			await ctx.author.remove_roles(role_pravo)
+			await ctx.author.remove_roles(role_cb)
+			await ctx.author.remove_roles(role_lsa)
+			await ctx.author.remove_roles(role_sfa)
+			await ctx.author.remove_roles(role_hsp)
+			await ctx.author.remove_roles(role_bls)
+			await ctx.author.remove_roles(role_bsf)
+			await ctx.author.remove_roles(role_blv)
+			await ctx.author.remove_roles(role_smils)
+			await ctx.author.remove_roles(role_smisf)
+			await ctx.author.remove_roles(role_smilv)
+			await ctx.author.remove_roles(role_ash)
+			await ctx.author.remove_roles(role_rm)
+			await ctx.author.remove_roles(role_yk)
+			await ctx.author.remove_roles(role_lcn)
+			await ctx.author.remove_roles(role_wmc)
+			await ctx.author.send(f'Роль {role_lspd}, была успешно выдана модератором! Роли других фракций были сняты')
+			await asyncio.sleep(60)
+			await yvedom.delete()
+			await ctx.message.delete()
+		else:
+			await ctx.send(f"{ctx.author.mention}, Ваш запрос на получение роли {role_lspd.mention} был отклонен модератором, проверьте правильность ника. Пример ника - [Фракция] Prophet_Romanov [1]")
+			await ctx.author.send(f'{ctx.author}, Ваш запрос на получение роли {role_lspd} был отклонен модератором, проверьте правильность ника. Пример ника - [Фракция] Prophet_Romanov [1]')
+			await asyncio.sleep(60)
+			await yvedom.delete()
+			await ctx.message.delete()
+	else:
+		pass
+
+@client.command()
+async def role_sfpd(ctx):
+	thhchannel = ctx.message.channel
+	ttttt = client.get_channel(741325950222073916)
+	rolestmoder = ctx.guild.get_role(703596629894365210)
+	role_lspd = ctx.guild.get_role(703596629860548643)
+	role_sfpd = ctx.guild.get_role(703596629860548642)
+	role_lvpd = ctx.guild.get_role(703596629860548641)
+	role_rcpd = ctx.guild.get_role(703596629860548640)
+	role_pravo = ctx.guild.get_role(703596629860548639)
+	role_cb = ctx.guild.get_role(703596629860548638)
+	role_lsa = ctx.guild.get_role(703596629856616457)
+	role_sfa = ctx.guild.get_role(703596629856616456)
+	role_hsp = ctx.guild.get_role(703596629856616455)
+	role_bls = ctx.guild.get_role(703596629856616454)
+	role_bsf = ctx.guild.get_role(703596629856616453)
+	role_blv = ctx.guild.get_role(703596629856616452)
+	role_smils = ctx.guild.get_role(703596629856616451)
+	role_smisf = ctx.guild.get_role(703596629856616450)
+	role_smilv = ctx.guild.get_role(703596629856616449)
+	role_ash = ctx.guild.get_role(703596629856616448)
+	role_rm = ctx.guild.get_role(703596629848096826)
+	role_yk = ctx.guild.get_role(703596629848096825)
+	role_lcn = ctx.guild.get_role(703596629848096824)
+	role_wmc = ctx.guild.get_role(703596629848096823)
+	if thhchannel == ttttt:
+		yvedom = await ctx.send(f'{ctx.author.mention} запрашивает роль {role_sfpd.mention} просьба рассмотреть {rolestmoder.mention} запрос максимально быстро!')
+		control_emojis = ["✅", "❎"]
+		for e in control_emojis:
+			await yvedom.add_reaction(e)
+
+
+		def check(reaction, user):
+			return user.bot == False  and reaction.message.id == yvedom.id and (str(reaction) in control_emojis) and rolestmoder in user.roles
+
+		reaction, user = await client.wait_for("reaction_add", check = check)
+
+		if str(reaction) == "✅":
+			await ctx.send(f"{ctx.author.mention}, Ваш запрос на получение роли {role_sfpd.mention} был одобрен! Роли других фракций были сняты.")
+			await ctx.author.add_roles(role_sfpd)
+			await ctx.author.remove_roles(role_lspd)
+			await ctx.author.remove_roles(role_lvpd)
+			await ctx.author.remove_roles(role_rcpd)
+			await ctx.author.remove_roles(role_pravo)
+			await ctx.author.remove_roles(role_cb)
+			await ctx.author.remove_roles(role_lsa)
+			await ctx.author.remove_roles(role_sfa)
+			await ctx.author.remove_roles(role_hsp)
+			await ctx.author.remove_roles(role_bls)
+			await ctx.author.remove_roles(role_bsf)
+			await ctx.author.remove_roles(role_blv)
+			await ctx.author.remove_roles(role_smils)
+			await ctx.author.remove_roles(role_smisf)
+			await ctx.author.remove_roles(role_smilv)
+			await ctx.author.remove_roles(role_ash)
+			await ctx.author.remove_roles(role_rm)
+			await ctx.author.remove_roles(role_yk)
+			await ctx.author.remove_roles(role_lcn)
+			await ctx.author.remove_roles(role_wmc)
+			await ctx.author.send(f'Роль {role_sfpd}, была успешно выдана модератором! Роли других фракций были сняты')
+			await asyncio.sleep(60)
+			await yvedom.delete()
+			await ctx.message.delete()
+		else:
+			await ctx.send(f"{ctx.author.mention}, Ваш запрос на получение роли {role_sfpd.mention} был отклонен модератором, проверьте правильность ника. Пример ника - [Фракция] Prophet_Romanov [1]")
+			await ctx.author.send(f'{ctx.author}, Ваш запрос на получение роли {role_sfpd} был отклонен модератором, проверьте правильность ника. Пример ника - [Фракция] Prophet_Romanov [1]')
+			await asyncio.sleep(60)
+			await yvedom.delete()
+			await ctx.message.delete()
+	else:
+		pass
+
+@client.command()
+async def role_lvpd(ctx):
+	thhchannel = ctx.message.channel
+	ttttt = client.get_channel(741325950222073916)
+	rolestmoder = ctx.guild.get_role(703596629894365210)
+	role_lspd = ctx.guild.get_role(703596629860548643)
+	role_sfpd = ctx.guild.get_role(703596629860548642)
+	role_lvpd = ctx.guild.get_role(703596629860548641)
+	role_rcpd = ctx.guild.get_role(703596629860548640)
+	role_pravo = ctx.guild.get_role(703596629860548639)
+	role_cb = ctx.guild.get_role(703596629860548638)
+	role_lsa = ctx.guild.get_role(703596629856616457)
+	role_sfa = ctx.guild.get_role(703596629856616456)
+	role_hsp = ctx.guild.get_role(703596629856616455)
+	role_bls = ctx.guild.get_role(703596629856616454)
+	role_bsf = ctx.guild.get_role(703596629856616453)
+	role_blv = ctx.guild.get_role(703596629856616452)
+	role_smils = ctx.guild.get_role(703596629856616451)
+	role_smisf = ctx.guild.get_role(703596629856616450)
+	role_smilv = ctx.guild.get_role(703596629856616449)
+	role_ash = ctx.guild.get_role(703596629856616448)
+	role_rm = ctx.guild.get_role(703596629848096826)
+	role_yk = ctx.guild.get_role(703596629848096825)
+	role_lcn = ctx.guild.get_role(703596629848096824)
+	role_wmc = ctx.guild.get_role(703596629848096823)
+	if thhchannel == ttttt:
+		yvedom = await ctx.send(f'{ctx.author.mention} запрашивает роль {role_lvpd.mention} просьба рассмотреть {rolestmoder.mention} запрос максимально быстро!')
+		control_emojis = ["✅", "❎"]
+		for e in control_emojis:
+			await yvedom.add_reaction(e)
+
+
+		def check(reaction, user):
+			return user.bot == False  and reaction.message.id == yvedom.id and (str(reaction) in control_emojis) and rolestmoder in user.roles
+
+		reaction, user = await client.wait_for("reaction_add", check = check)
+
+		if str(reaction) == "✅":
+			await ctx.send(f"{ctx.author.mention}, Ваш запрос на получение роли {role_lvpd.mention} был одобрен! Роли других фракций были сняты.")
+			await ctx.author.add_roles(role_lvpd)
+			await ctx.author.remove_roles(role_sfpd)
+			await ctx.author.remove_roles(role_lspd)
+			await ctx.author.remove_roles(role_rcpd)
+			await ctx.author.remove_roles(role_pravo)
+			await ctx.author.remove_roles(role_cb)
+			await ctx.author.remove_roles(role_lsa)
+			await ctx.author.remove_roles(role_sfa)
+			await ctx.author.remove_roles(role_hsp)
+			await ctx.author.remove_roles(role_bls)
+			await ctx.author.remove_roles(role_bsf)
+			await ctx.author.remove_roles(role_blv)
+			await ctx.author.remove_roles(role_smils)
+			await ctx.author.remove_roles(role_smisf)
+			await ctx.author.remove_roles(role_smilv)
+			await ctx.author.remove_roles(role_ash)
+			await ctx.author.remove_roles(role_rm)
+			await ctx.author.remove_roles(role_yk)
+			await ctx.author.remove_roles(role_lcn)
+			await ctx.author.remove_roles(role_wmc)
+			await ctx.author.send(f'Роль {role_lvpd}, была успешно выдана модератором! Роли других фракций были сняты')
+			await asyncio.sleep(60)
+			await yvedom.delete()
+			await ctx.message.delete()
+		else:
+			await ctx.send(f"{ctx.author.mention}, Ваш запрос на получение роли {role_lvpd.mention} был отклонен модератором, проверьте правильность ника. Пример ника - [Фракция] Prophet_Romanov [1]")
+			await ctx.author.send(f'{ctx.author}, Ваш запрос на получение роли {role_lvpd} был отклонен модератором, проверьте правильность ника. Пример ника - [Фракция] Prophet_Romanov [1]')
+			await asyncio.sleep(60)
+			await yvedom.delete()
+			await ctx.message.delete()
+	else:
+		pass
+
+@client.command()
+async def role_rcpd(ctx):
+	thhchannel = ctx.message.channel
+	ttttt = client.get_channel(741325950222073916)
+	rolestmoder = ctx.guild.get_role(703596629894365210)
+	role_lspd = ctx.guild.get_role(703596629860548643)
+	role_sfpd = ctx.guild.get_role(703596629860548642)
+	role_lvpd = ctx.guild.get_role(703596629860548641)
+	role_rcpd = ctx.guild.get_role(703596629860548640)
+	role_pravo = ctx.guild.get_role(703596629860548639)
+	role_cb = ctx.guild.get_role(703596629860548638)
+	role_lsa = ctx.guild.get_role(703596629856616457)
+	role_sfa = ctx.guild.get_role(703596629856616456)
+	role_hsp = ctx.guild.get_role(703596629856616455)
+	role_bls = ctx.guild.get_role(703596629856616454)
+	role_bsf = ctx.guild.get_role(703596629856616453)
+	role_blv = ctx.guild.get_role(703596629856616452)
+	role_smils = ctx.guild.get_role(703596629856616451)
+	role_smisf = ctx.guild.get_role(703596629856616450)
+	role_smilv = ctx.guild.get_role(703596629856616449)
+	role_ash = ctx.guild.get_role(703596629856616448)
+	role_rm = ctx.guild.get_role(703596629848096826)
+	role_yk = ctx.guild.get_role(703596629848096825)
+	role_lcn = ctx.guild.get_role(703596629848096824)
+	role_wmc = ctx.guild.get_role(703596629848096823)
+	if thhchannel == ttttt:
+		yvedom = await ctx.send(f'{ctx.author.mention} запрашивает роль {role_rcpd.mention} просьба рассмотреть {rolestmoder.mention} запрос максимально быстро!')
+		control_emojis = ["✅", "❎"]
+		for e in control_emojis:
+			await yvedom.add_reaction(e)
+
+
+		def check(reaction, user):
+			return user.bot == False  and reaction.message.id == yvedom.id and (str(reaction) in control_emojis) and rolestmoder in user.roles
+
+		reaction, user = await client.wait_for("reaction_add", check = check)
+
+		if str(reaction) == "✅":
+			await ctx.send(f"{ctx.author.mention}, Ваш запрос на получение роли {role_rcpd.mention} был одобрен! Роли других фракций были сняты.")
+			await ctx.author.add_roles(role_rcpd)
+			await ctx.author.remove_roles(role_sfpd)
+			await ctx.author.remove_roles(role_lvpd)
+			await ctx.author.remove_roles(role_lspd)
+			await ctx.author.remove_roles(role_pravo)
+			await ctx.author.remove_roles(role_cb)
+			await ctx.author.remove_roles(role_lsa)
+			await ctx.author.remove_roles(role_sfa)
+			await ctx.author.remove_roles(role_hsp)
+			await ctx.author.remove_roles(role_bls)
+			await ctx.author.remove_roles(role_bsf)
+			await ctx.author.remove_roles(role_blv)
+			await ctx.author.remove_roles(role_smils)
+			await ctx.author.remove_roles(role_smisf)
+			await ctx.author.remove_roles(role_smilv)
+			await ctx.author.remove_roles(role_ash)
+			await ctx.author.remove_roles(role_rm)
+			await ctx.author.remove_roles(role_yk)
+			await ctx.author.remove_roles(role_lcn)
+			await ctx.author.remove_roles(role_wmc)
+			await ctx.author.send(f'Роль {role_rcpd}, была успешно выдана модератором! Роли других фракций были сняты')
+			await asyncio.sleep(60)
+			await yvedom.delete()
+			await ctx.message.delete()
+		else:
+			await ctx.send(f"{ctx.author.mention}, Ваш запрос на получение роли {role_rcpd.mention} был отклонен модератором, проверьте правильность ника. Пример ника - [Фракция] Prophet_Romanov [1]")
+			await ctx.author.send(f'{ctx.author}, Ваш запрос на получение роли {role_rcpd} был отклонен модератором, проверьте правильность ника. Пример ника - [Фракция] Prophet_Romanov [1]')
+			await asyncio.sleep(60)
+			await yvedom.delete()
+			await ctx.message.delete()
+	else:
+		pass
+
+@client.command()
+async def role_pravo(ctx):
+	thhchannel = ctx.message.channel
+	ttttt = client.get_channel(741325950222073916)
+	rolestmoder = ctx.guild.get_role(703596629894365210)
+	role_lspd = ctx.guild.get_role(703596629860548643)
+	role_sfpd = ctx.guild.get_role(703596629860548642)
+	role_lvpd = ctx.guild.get_role(703596629860548641)
+	role_rcpd = ctx.guild.get_role(703596629860548640)
+	role_pravo = ctx.guild.get_role(703596629860548639)
+	role_cb = ctx.guild.get_role(703596629860548638)
+	role_lsa = ctx.guild.get_role(703596629856616457)
+	role_sfa = ctx.guild.get_role(703596629856616456)
+	role_hsp = ctx.guild.get_role(703596629856616455)
+	role_bls = ctx.guild.get_role(703596629856616454)
+	role_bsf = ctx.guild.get_role(703596629856616453)
+	role_blv = ctx.guild.get_role(703596629856616452)
+	role_smils = ctx.guild.get_role(703596629856616451)
+	role_smisf = ctx.guild.get_role(703596629856616450)
+	role_smilv = ctx.guild.get_role(703596629856616449)
+	role_ash = ctx.guild.get_role(703596629856616448)
+	role_rm = ctx.guild.get_role(703596629848096826)
+	role_yk = ctx.guild.get_role(703596629848096825)
+	role_lcn = ctx.guild.get_role(703596629848096824)
+	role_wmc = ctx.guild.get_role(703596629848096823)
+	if thhchannel == ttttt:
+		yvedom = await ctx.send(f'{ctx.author.mention} запрашивает роль {role_pravo.mention} просьба рассмотреть {rolestmoder.mention} запрос максимально быстро!')
+		control_emojis = ["✅", "❎"]
+		for e in control_emojis:
+			await yvedom.add_reaction(e)
+
+
+		def check(reaction, user):
+			return user.bot == False  and reaction.message.id == yvedom.id and (str(reaction) in control_emojis) and rolestmoder in user.roles
+
+		reaction, user = await client.wait_for("reaction_add", check = check)
+
+		if str(reaction) == "✅":
+			await ctx.send(f"{ctx.author.mention}, Ваш запрос на получение роли {role_pravo.mention} был одобрен! Роли других фракций были сняты.")
+			await ctx.author.add_roles(role_pravo)
+			await ctx.author.remove_roles(role_sfpd)
+			await ctx.author.remove_roles(role_lvpd)
+			await ctx.author.remove_roles(role_lspd)
+			await ctx.author.remove_roles(role_rcpd)
+			await ctx.author.remove_roles(role_cb)
+			await ctx.author.remove_roles(role_lsa)
+			await ctx.author.remove_roles(role_sfa)
+			await ctx.author.remove_roles(role_hsp)
+			await ctx.author.remove_roles(role_bls)
+			await ctx.author.remove_roles(role_bsf)
+			await ctx.author.remove_roles(role_blv)
+			await ctx.author.remove_roles(role_smils)
+			await ctx.author.remove_roles(role_smisf)
+			await ctx.author.remove_roles(role_smilv)
+			await ctx.author.remove_roles(role_ash)
+			await ctx.author.remove_roles(role_rm)
+			await ctx.author.remove_roles(role_yk)
+			await ctx.author.remove_roles(role_lcn)
+			await ctx.author.remove_roles(role_wmc)
+			await ctx.author.send(f'Роль {role_rcpd}, была успешно выдана модератором! Роли других фракций были сняты')
+			await asyncio.sleep(60)
+			await yvedom.delete()
+			await ctx.message.delete()
+		else:
+			await ctx.send(f"{ctx.author.mention}, Ваш запрос на получение роли {role_pravo.mention} был отклонен модератором, проверьте правильность ника. Пример ника - [Фракция] Prophet_Romanov [1]")
+			await ctx.author.send(f'{ctx.author}, Ваш запрос на получение роли {role_pravo} был отклонен модератором, проверьте правильность ника. Пример ника - [Фракция] Prophet_Romanov [1]')
+			await asyncio.sleep(60)
+			await yvedom.delete()
+			await ctx.message.delete()
+	else:
+		pass
+
+@client.command()
+async def role_cb(ctx):
+	thhchannel = ctx.message.channel
+	ttttt = client.get_channel(741325950222073916)
+	rolestmoder = ctx.guild.get_role(703596629894365210)
+	role_lspd = ctx.guild.get_role(703596629860548643)
+	role_sfpd = ctx.guild.get_role(703596629860548642)
+	role_lvpd = ctx.guild.get_role(703596629860548641)
+	role_rcpd = ctx.guild.get_role(703596629860548640)
+	role_pravo = ctx.guild.get_role(703596629860548639)
+	role_cb = ctx.guild.get_role(703596629860548638)
+	role_lsa = ctx.guild.get_role(703596629856616457)
+	role_sfa = ctx.guild.get_role(703596629856616456)
+	role_hsp = ctx.guild.get_role(703596629856616455)
+	role_bls = ctx.guild.get_role(703596629856616454)
+	role_bsf = ctx.guild.get_role(703596629856616453)
+	role_blv = ctx.guild.get_role(703596629856616452)
+	role_smils = ctx.guild.get_role(703596629856616451)
+	role_smisf = ctx.guild.get_role(703596629856616450)
+	role_smilv = ctx.guild.get_role(703596629856616449)
+	role_ash = ctx.guild.get_role(703596629856616448)
+	role_rm = ctx.guild.get_role(703596629848096826)
+	role_yk = ctx.guild.get_role(703596629848096825)
+	role_lcn = ctx.guild.get_role(703596629848096824)
+	role_wmc = ctx.guild.get_role(703596629848096823)
+	if thhchannel == ttttt:
+		yvedom = await ctx.send(f'{ctx.author.mention} запрашивает роль {role_cb.mention} просьба рассмотреть {rolestmoder.mention} запрос максимально быстро!')
+		control_emojis = ["✅", "❎"]
+		for e in control_emojis:
+			await yvedom.add_reaction(e)
+
+
+		def check(reaction, user):
+			return user.bot == False  and reaction.message.id == yvedom.id and (str(reaction) in control_emojis) and rolestmoder in user.roles
+
+		reaction, user = await client.wait_for("reaction_add", check = check)
+
+		if str(reaction) == "✅":
+			await ctx.send(f"{ctx.author.mention}, Ваш запрос на получение роли {role_cb.mention} был одобрен! Роли других фракций были сняты.")
+			await ctx.author.add_roles(role_cb)
+			await ctx.author.remove_roles(role_sfpd)
+			await ctx.author.remove_roles(role_lvpd)
+			await ctx.author.remove_roles(role_lspd)
+			await ctx.author.remove_roles(role_rcpd)
+			await ctx.author.remove_roles(role_pravo)
+			await ctx.author.remove_roles(role_lsa)
+			await ctx.author.remove_roles(role_sfa)
+			await ctx.author.remove_roles(role_hsp)
+			await ctx.author.remove_roles(role_bls)
+			await ctx.author.remove_roles(role_bsf)
+			await ctx.author.remove_roles(role_blv)
+			await ctx.author.remove_roles(role_smils)
+			await ctx.author.remove_roles(role_smisf)
+			await ctx.author.remove_roles(role_smilv)
+			await ctx.author.remove_roles(role_ash)
+			await ctx.author.remove_roles(role_rm)
+			await ctx.author.remove_roles(role_yk)
+			await ctx.author.remove_roles(role_lcn)
+			await ctx.author.remove_roles(role_wmc)
+			await ctx.author.send(f'Роль {role_rcpd}, была успешно выдана модератором! Роли других фракций были сняты')
+			await asyncio.sleep(60)
+			await yvedom.delete()
+			await ctx.message.delete()
+		else:
+			await ctx.send(f"{ctx.author.mention}, Ваш запрос на получение роли {role_cb.mention} был отклонен модератором, проверьте правильность ника. Пример ника - [Фракция] Prophet_Romanov [1]")
+			await ctx.author.send(f'{ctx.author}, Ваш запрос на получение роли {role_cb} был отклонен модератором, проверьте правильность ника. Пример ника - [Фракция] Prophet_Romanov [1]')
+			await asyncio.sleep(60)
+			await yvedom.delete()
+			await ctx.message.delete()
+	else:
+		pass
+
+@client.command()
+async def role_lsa(ctx):
+	thhchannel = ctx.message.channel
+	ttttt = client.get_channel(741325950222073916)
+	rolestmoder = ctx.guild.get_role(703596629894365210)
+	role_lspd = ctx.guild.get_role(703596629860548643)
+	role_sfpd = ctx.guild.get_role(703596629860548642)
+	role_lvpd = ctx.guild.get_role(703596629860548641)
+	role_rcpd = ctx.guild.get_role(703596629860548640)
+	role_pravo = ctx.guild.get_role(703596629860548639)
+	role_cb = ctx.guild.get_role(703596629860548638)
+	role_lsa = ctx.guild.get_role(703596629856616457)
+	role_sfa = ctx.guild.get_role(703596629856616456)
+	role_hsp = ctx.guild.get_role(703596629856616455)
+	role_bls = ctx.guild.get_role(703596629856616454)
+	role_bsf = ctx.guild.get_role(703596629856616453)
+	role_blv = ctx.guild.get_role(703596629856616452)
+	role_smils = ctx.guild.get_role(703596629856616451)
+	role_smisf = ctx.guild.get_role(703596629856616450)
+	role_smilv = ctx.guild.get_role(703596629856616449)
+	role_ash = ctx.guild.get_role(703596629856616448)
+	role_rm = ctx.guild.get_role(703596629848096826)
+	role_yk = ctx.guild.get_role(703596629848096825)
+	role_lcn = ctx.guild.get_role(703596629848096824)
+	role_wmc = ctx.guild.get_role(703596629848096823)
+	if thhchannel == ttttt:
+		yvedom = await ctx.send(f'{ctx.author.mention} запрашивает роль {role_lsa.mention} просьба рассмотреть {rolestmoder.mention} запрос максимально быстро!')
+		control_emojis = ["✅", "❎"]
+		for e in control_emojis:
+			await yvedom.add_reaction(e)
+
+
+		def check(reaction, user):
+			return user.bot == False  and reaction.message.id == yvedom.id and (str(reaction) in control_emojis) and rolestmoder in user.roles
+
+		reaction, user = await client.wait_for("reaction_add", check = check)
+
+		if str(reaction) == "✅":
+			await ctx.send(f"{ctx.author.mention}, Ваш запрос на получение роли {role_lsa.mention} был одобрен! Роли других фракций были сняты.")
+			await ctx.author.add_roles(role_lsa)
+			await ctx.author.remove_roles(role_sfpd)
+			await ctx.author.remove_roles(role_lvpd)
+			await ctx.author.remove_roles(role_lspd)
+			await ctx.author.remove_roles(role_rcpd)
+			await ctx.author.remove_roles(role_pravo)
+			await ctx.author.remove_roles(role_cb)
+			await ctx.author.remove_roles(role_sfa)
+			await ctx.author.remove_roles(role_hsp)
+			await ctx.author.remove_roles(role_bls)
+			await ctx.author.remove_roles(role_bsf)
+			await ctx.author.remove_roles(role_blv)
+			await ctx.author.remove_roles(role_smils)
+			await ctx.author.remove_roles(role_smisf)
+			await ctx.author.remove_roles(role_smilv)
+			await ctx.author.remove_roles(role_ash)
+			await ctx.author.remove_roles(role_rm)
+			await ctx.author.remove_roles(role_yk)
+			await ctx.author.remove_roles(role_lcn)
+			await ctx.author.remove_roles(role_wmc)
+			await ctx.author.send(f'Роль {role_lsa}, была успешно выдана модератором! Роли других фракций были сняты')
+			await asyncio.sleep(60)
+			await yvedom.delete()
+			await ctx.message.delete()
+		else:
+			await ctx.send(f"{ctx.author.mention}, Ваш запрос на получение роли {role_lsa.mention} был отклонен модератором, проверьте правильность ника. Пример ника - [Фракция] Prophet_Romanov [1]")
+			await ctx.author.send(f'{ctx.author}, Ваш запрос на получение роли {role_lsa} был отклонен модератором, проверьте правильность ника. Пример ника - [Фракция] Prophet_Romanov [1]')
+			await asyncio.sleep(60)
+			await yvedom.delete()
+			await ctx.message.delete()
+	else:
+		pass
+
+@client.command()
+async def role_sfa(ctx):
+	thhchannel = ctx.message.channel
+	ttttt = client.get_channel(741325950222073916)
+	rolestmoder = ctx.guild.get_role(703596629894365210)
+	role_lspd = ctx.guild.get_role(703596629860548643)
+	role_sfpd = ctx.guild.get_role(703596629860548642)
+	role_lvpd = ctx.guild.get_role(703596629860548641)
+	role_rcpd = ctx.guild.get_role(703596629860548640)
+	role_pravo = ctx.guild.get_role(703596629860548639)
+	role_cb = ctx.guild.get_role(703596629860548638)
+	role_lsa = ctx.guild.get_role(703596629856616457)
+	role_sfa = ctx.guild.get_role(703596629856616456)
+	role_hsp = ctx.guild.get_role(703596629856616455)
+	role_bls = ctx.guild.get_role(703596629856616454)
+	role_bsf = ctx.guild.get_role(703596629856616453)
+	role_blv = ctx.guild.get_role(703596629856616452)
+	role_smils = ctx.guild.get_role(703596629856616451)
+	role_smisf = ctx.guild.get_role(703596629856616450)
+	role_smilv = ctx.guild.get_role(703596629856616449)
+	role_ash = ctx.guild.get_role(703596629856616448)
+	role_rm = ctx.guild.get_role(703596629848096826)
+	role_yk = ctx.guild.get_role(703596629848096825)
+	role_lcn = ctx.guild.get_role(703596629848096824)
+	role_wmc = ctx.guild.get_role(703596629848096823)
+	if thhchannel == ttttt:
+		yvedom = await ctx.send(f'{ctx.author.mention} запрашивает роль {role_sfa.mention} просьба рассмотреть {rolestmoder.mention} запрос максимально быстро!')
+		control_emojis = ["✅", "❎"]
+		for e in control_emojis:
+			await yvedom.add_reaction(e)
+
+
+		def check(reaction, user):
+			return user.bot == False  and reaction.message.id == yvedom.id and (str(reaction) in control_emojis) and rolestmoder in user.roles
+
+		reaction, user = await client.wait_for("reaction_add", check = check)
+
+		if str(reaction) == "✅":
+			await ctx.send(f"{ctx.author.mention}, Ваш запрос на получение роли {role_sfa.mention} был одобрен! Роли других фракций были сняты.")
+			await ctx.author.add_roles(role_sfa)
+			await ctx.author.remove_roles(role_sfpd)
+			await ctx.author.remove_roles(role_lvpd)
+			await ctx.author.remove_roles(role_lspd)
+			await ctx.author.remove_roles(role_rcpd)
+			await ctx.author.remove_roles(role_pravo)
+			await ctx.author.remove_roles(role_cb)
+			await ctx.author.remove_roles(role_lsa)
+			await ctx.author.remove_roles(role_hsp)
+			await ctx.author.remove_roles(role_bls)
+			await ctx.author.remove_roles(role_bsf)
+			await ctx.author.remove_roles(role_blv)
+			await ctx.author.remove_roles(role_smils)
+			await ctx.author.remove_roles(role_smisf)
+			await ctx.author.remove_roles(role_smilv)
+			await ctx.author.remove_roles(role_ash)
+			await ctx.author.remove_roles(role_rm)
+			await ctx.author.remove_roles(role_yk)
+			await ctx.author.remove_roles(role_lcn)
+			await ctx.author.remove_roles(role_wmc)
+			await ctx.author.send(f'Роль {role_sfa}, была успешно выдана модератором! Роли других фракций были сняты')
+			await asyncio.sleep(60)
+			await yvedom.delete()
+			await ctx.message.delete()
+		else:
+			await ctx.send(f"{ctx.author.mention}, Ваш запрос на получение роли {role_sfa.mention} был отклонен модератором, проверьте правильность ника. Пример ника - [Фракция] Prophet_Romanov [1]")
+			await ctx.author.send(f'{ctx.author}, Ваш запрос на получение роли {role_sfa} был отклонен модератором, проверьте правильность ника. Пример ника - [Фракция] Prophet_Romanov [1]')
+			await asyncio.sleep(60)
+			await yvedom.delete()
+			await ctx.message.delete()
+	else:
+		pass
+
+@client.command()
+async def role_hsp(ctx):
+	thhchannel = ctx.message.channel
+	ttttt = client.get_channel(741325950222073916)
+	rolestmoder = ctx.guild.get_role(703596629894365210)
+	role_lspd = ctx.guild.get_role(703596629860548643)
+	role_sfpd = ctx.guild.get_role(703596629860548642)
+	role_lvpd = ctx.guild.get_role(703596629860548641)
+	role_rcpd = ctx.guild.get_role(703596629860548640)
+	role_pravo = ctx.guild.get_role(703596629860548639)
+	role_cb = ctx.guild.get_role(703596629860548638)
+	role_lsa = ctx.guild.get_role(703596629856616457)
+	role_sfa = ctx.guild.get_role(703596629856616456)
+	role_hsp = ctx.guild.get_role(703596629856616455)
+	role_bls = ctx.guild.get_role(703596629856616454)
+	role_bsf = ctx.guild.get_role(703596629856616453)
+	role_blv = ctx.guild.get_role(703596629856616452)
+	role_smils = ctx.guild.get_role(703596629856616451)
+	role_smisf = ctx.guild.get_role(703596629856616450)
+	role_smilv = ctx.guild.get_role(703596629856616449)
+	role_ash = ctx.guild.get_role(703596629856616448)
+	role_rm = ctx.guild.get_role(703596629848096826)
+	role_yk = ctx.guild.get_role(703596629848096825)
+	role_lcn = ctx.guild.get_role(703596629848096824)
+	role_wmc = ctx.guild.get_role(703596629848096823)
+	if thhchannel == ttttt:
+		yvedom = await ctx.send(f'{ctx.author.mention} запрашивает роль {role_hsp.mention} просьба рассмотреть {rolestmoder.mention} запрос максимально быстро!')
+		control_emojis = ["✅", "❎"]
+		for e in control_emojis:
+			await yvedom.add_reaction(e)
+
+
+		def check(reaction, user):
+			return user.bot == False  and reaction.message.id == yvedom.id and (str(reaction) in control_emojis) and rolestmoder in user.roles
+
+		reaction, user = await client.wait_for("reaction_add", check = check)
+
+		if str(reaction) == "✅":
+			await ctx.send(f"{ctx.author.mention}, Ваш запрос на получение роли {role_hsp.mention} был одобрен! Роли других фракций были сняты.")
+			await ctx.author.add_roles(role_hsp)
+			await ctx.author.remove_roles(role_sfpd)
+			await ctx.author.remove_roles(role_lvpd)
+			await ctx.author.remove_roles(role_lspd)
+			await ctx.author.remove_roles(role_rcpd)
+			await ctx.author.remove_roles(role_pravo)
+			await ctx.author.remove_roles(role_cb)
+			await ctx.author.remove_roles(role_lsa)
+			await ctx.author.remove_roles(role_sfa)
+			await ctx.author.remove_roles(role_bls)
+			await ctx.author.remove_roles(role_bsf)
+			await ctx.author.remove_roles(role_blv)
+			await ctx.author.remove_roles(role_smils)
+			await ctx.author.remove_roles(role_smisf)
+			await ctx.author.remove_roles(role_smilv)
+			await ctx.author.remove_roles(role_ash)
+			await ctx.author.remove_roles(role_rm)
+			await ctx.author.remove_roles(role_yk)
+			await ctx.author.remove_roles(role_lcn)
+			await ctx.author.remove_roles(role_wmc)
+			await ctx.author.send(f'Роль {role_hsp}, была успешно выдана модератором! Роли других фракций были сняты')
+			await asyncio.sleep(60)
+			await yvedom.delete()
+			await ctx.message.delete()
+		else:
+			await ctx.send(f"{ctx.author.mention}, Ваш запрос на получение роли {role_hsp.mention} был отклонен модератором, проверьте правильность ника. Пример ника - [Фракция] Prophet_Romanov [1]")
+			await ctx.author.send(f'{ctx.author}, Ваш запрос на получение роли {role_hsp} был отклонен модератором, проверьте правильность ника. Пример ника - [Фракция] Prophet_Romanov [1]')
+			await asyncio.sleep(60)
+			await yvedom.delete()
+			await ctx.message.delete()
+	else:
+		pass
+
+@client.command()
+async def role_bls(ctx):
+	thhchannel = ctx.message.channel
+	ttttt = client.get_channel(741325950222073916)
+	rolestmoder = ctx.guild.get_role(703596629894365210)
+	role_lspd = ctx.guild.get_role(703596629860548643)
+	role_sfpd = ctx.guild.get_role(703596629860548642)
+	role_lvpd = ctx.guild.get_role(703596629860548641)
+	role_rcpd = ctx.guild.get_role(703596629860548640)
+	role_pravo = ctx.guild.get_role(703596629860548639)
+	role_cb = ctx.guild.get_role(703596629860548638)
+	role_lsa = ctx.guild.get_role(703596629856616457)
+	role_sfa = ctx.guild.get_role(703596629856616456)
+	role_hsp = ctx.guild.get_role(703596629856616455)
+	role_bls = ctx.guild.get_role(703596629856616454)
+	role_bsf = ctx.guild.get_role(703596629856616453)
+	role_blv = ctx.guild.get_role(703596629856616452)
+	role_smils = ctx.guild.get_role(703596629856616451)
+	role_smisf = ctx.guild.get_role(703596629856616450)
+	role_smilv = ctx.guild.get_role(703596629856616449)
+	role_ash = ctx.guild.get_role(703596629856616448)
+	role_rm = ctx.guild.get_role(703596629848096826)
+	role_yk = ctx.guild.get_role(703596629848096825)
+	role_lcn = ctx.guild.get_role(703596629848096824)
+	role_wmc = ctx.guild.get_role(703596629848096823)
+	if thhchannel == ttttt:
+		yvedom = await ctx.send(f'{ctx.author.mention} запрашивает роль {role_bls.mention} просьба рассмотреть {rolestmoder.mention} запрос максимально быстро!')
+		control_emojis = ["✅", "❎"]
+		for e in control_emojis:
+			await yvedom.add_reaction(e)
+
+
+		def check(reaction, user):
+			return user.bot == False  and reaction.message.id == yvedom.id and (str(reaction) in control_emojis) and rolestmoder in user.roles
+
+		reaction, user = await client.wait_for("reaction_add", check = check)
+
+		if str(reaction) == "✅":
+			await ctx.send(f"{ctx.author.mention}, Ваш запрос на получение роли {role_bls.mention} был одобрен! Роли других фракций были сняты.")
+			await ctx.author.add_roles(role_bls)
+			await ctx.author.remove_roles(role_sfpd)
+			await ctx.author.remove_roles(role_lvpd)
+			await ctx.author.remove_roles(role_lspd)
+			await ctx.author.remove_roles(role_rcpd)
+			await ctx.author.remove_roles(role_pravo)
+			await ctx.author.remove_roles(role_cb)
+			await ctx.author.remove_roles(role_lsa)
+			await ctx.author.remove_roles(role_sfa)
+			await ctx.author.remove_roles(role_hsp)
+			await ctx.author.remove_roles(role_bsf)
+			await ctx.author.remove_roles(role_blv)
+			await ctx.author.remove_roles(role_smils)
+			await ctx.author.remove_roles(role_smisf)
+			await ctx.author.remove_roles(role_smilv)
+			await ctx.author.remove_roles(role_ash)
+			await ctx.author.remove_roles(role_rm)
+			await ctx.author.remove_roles(role_yk)
+			await ctx.author.remove_roles(role_lcn)
+			await ctx.author.remove_roles(role_wmc)
+			await ctx.author.send(f'Роль {role_bls}, была успешно выдана модератором! Роли других фракций были сняты')
+			await asyncio.sleep(60)
+			await yvedom.delete()
+			await ctx.message.delete()
+		else:
+			await ctx.send(f"{ctx.author.mention}, Ваш запрос на получение роли {role_bls.mention} был отклонен модератором, проверьте правильность ника. Пример ника - [Фракция] Prophet_Romanov [1]")
+			await ctx.author.send(f'{ctx.author}, Ваш запрос на получение роли {role_bls} был отклонен модератором, проверьте правильность ника. Пример ника - [Фракция] Prophet_Romanov [1]')
+			await asyncio.sleep(60)
+			await yvedom.delete()
+			await ctx.message.delete()
+	else:
+		pass
+
+@client.command()
+async def role_bsf(ctx):
+	thhchannel = ctx.message.channel
+	ttttt = client.get_channel(741325950222073916)
+	rolestmoder = ctx.guild.get_role(703596629894365210)
+	role_lspd = ctx.guild.get_role(703596629860548643)
+	role_sfpd = ctx.guild.get_role(703596629860548642)
+	role_lvpd = ctx.guild.get_role(703596629860548641)
+	role_rcpd = ctx.guild.get_role(703596629860548640)
+	role_pravo = ctx.guild.get_role(703596629860548639)
+	role_cb = ctx.guild.get_role(703596629860548638)
+	role_lsa = ctx.guild.get_role(703596629856616457)
+	role_sfa = ctx.guild.get_role(703596629856616456)
+	role_hsp = ctx.guild.get_role(703596629856616455)
+	role_bls = ctx.guild.get_role(703596629856616454)
+	role_bsf = ctx.guild.get_role(703596629856616453)
+	role_blv = ctx.guild.get_role(703596629856616452)
+	role_smils = ctx.guild.get_role(703596629856616451)
+	role_smisf = ctx.guild.get_role(703596629856616450)
+	role_smilv = ctx.guild.get_role(703596629856616449)
+	role_ash = ctx.guild.get_role(703596629856616448)
+	role_rm = ctx.guild.get_role(703596629848096826)
+	role_yk = ctx.guild.get_role(703596629848096825)
+	role_lcn = ctx.guild.get_role(703596629848096824)
+	role_wmc = ctx.guild.get_role(703596629848096823)
+	if thhchannel == ttttt:
+		yvedom = await ctx.send(f'{ctx.author.mention} запрашивает роль {role_bsf.mention} просьба рассмотреть {rolestmoder.mention} запрос максимально быстро!')
+		control_emojis = ["✅", "❎"]
+		for e in control_emojis:
+			await yvedom.add_reaction(e)
+
+
+		def check(reaction, user):
+			return user.bot == False  and reaction.message.id == yvedom.id and (str(reaction) in control_emojis) and rolestmoder in user.roles
+
+		reaction, user = await client.wait_for("reaction_add", check = check)
+
+		if str(reaction) == "✅":
+			await ctx.send(f"{ctx.author.mention}, Ваш запрос на получение роли {role_bsf.mention} был одобрен! Роли других фракций были сняты.")
+			await ctx.author.add_roles(role_bsf)
+			await ctx.author.remove_roles(role_sfpd)
+			await ctx.author.remove_roles(role_lvpd)
+			await ctx.author.remove_roles(role_lspd)
+			await ctx.author.remove_roles(role_rcpd)
+			await ctx.author.remove_roles(role_pravo)
+			await ctx.author.remove_roles(role_cb)
+			await ctx.author.remove_roles(role_lsa)
+			await ctx.author.remove_roles(role_sfa)
+			await ctx.author.remove_roles(role_hsp)
+			await ctx.author.remove_roles(role_bls)
+			await ctx.author.remove_roles(role_blv)
+			await ctx.author.remove_roles(role_smils)
+			await ctx.author.remove_roles(role_smisf)
+			await ctx.author.remove_roles(role_smilv)
+			await ctx.author.remove_roles(role_ash)
+			await ctx.author.remove_roles(role_rm)
+			await ctx.author.remove_roles(role_yk)
+			await ctx.author.remove_roles(role_lcn)
+			await ctx.author.remove_roles(role_wmc)
+			await ctx.author.send(f'Роль {role_bsf}, была успешно выдана модератором! Роли других фракций были сняты')
+			await asyncio.sleep(60)
+			await yvedom.delete()
+			await ctx.message.delete()
+		else:
+			await ctx.send(f"{ctx.author.mention}, Ваш запрос на получение роли {role_bsf.mention} был отклонен модератором, проверьте правильность ника. Пример ника - [Фракция] Prophet_Romanov [1]")
+			await ctx.author.send(f'{ctx.author}, Ваш запрос на получение роли {role_bsf} был отклонен модератором, проверьте правильность ника. Пример ника - [Фракция] Prophet_Romanov [1]')
+			await asyncio.sleep(60)
+			await yvedom.delete()
+			await ctx.message.delete()
+	else:
+		pass
+
+@client.command()
+async def role_blv(ctx):
+	thhchannel = ctx.message.channel
+	ttttt = client.get_channel(741325950222073916)
+	rolestmoder = ctx.guild.get_role(703596629894365210)
+	role_lspd = ctx.guild.get_role(703596629860548643)
+	role_sfpd = ctx.guild.get_role(703596629860548642)
+	role_lvpd = ctx.guild.get_role(703596629860548641)
+	role_rcpd = ctx.guild.get_role(703596629860548640)
+	role_pravo = ctx.guild.get_role(703596629860548639)
+	role_cb = ctx.guild.get_role(703596629860548638)
+	role_lsa = ctx.guild.get_role(703596629856616457)
+	role_sfa = ctx.guild.get_role(703596629856616456)
+	role_hsp = ctx.guild.get_role(703596629856616455)
+	role_bls = ctx.guild.get_role(703596629856616454)
+	role_bsf = ctx.guild.get_role(703596629856616453)
+	role_blv = ctx.guild.get_role(703596629856616452)
+	role_smils = ctx.guild.get_role(703596629856616451)
+	role_smisf = ctx.guild.get_role(703596629856616450)
+	role_smilv = ctx.guild.get_role(703596629856616449)
+	role_ash = ctx.guild.get_role(703596629856616448)
+	role_rm = ctx.guild.get_role(703596629848096826)
+	role_yk = ctx.guild.get_role(703596629848096825)
+	role_lcn = ctx.guild.get_role(703596629848096824)
+	role_wmc = ctx.guild.get_role(703596629848096823)
+	if thhchannel == ttttt:
+		yvedom = await ctx.send(f'{ctx.author.mention} запрашивает роль {role_blv.mention} просьба рассмотреть {rolestmoder.mention} запрос максимально быстро!')
+		control_emojis = ["✅", "❎"]
+		for e in control_emojis:
+			await yvedom.add_reaction(e)
+
+
+		def check(reaction, user):
+			return user.bot == False  and reaction.message.id == yvedom.id and (str(reaction) in control_emojis) and rolestmoder in user.roles
+
+		reaction, user = await client.wait_for("reaction_add", check = check)
+
+		if str(reaction) == "✅":
+			await ctx.send(f"{ctx.author.mention}, Ваш запрос на получение роли {role_blv.mention} был одобрен! Роли других фракций были сняты.")
+			await ctx.author.add_roles(role_blv)
+			await ctx.author.remove_roles(role_sfpd)
+			await ctx.author.remove_roles(role_lvpd)
+			await ctx.author.remove_roles(role_lspd)
+			await ctx.author.remove_roles(role_rcpd)
+			await ctx.author.remove_roles(role_pravo)
+			await ctx.author.remove_roles(role_cb)
+			await ctx.author.remove_roles(role_lsa)
+			await ctx.author.remove_roles(role_sfa)
+			await ctx.author.remove_roles(role_hsp)
+			await ctx.author.remove_roles(role_bls)
+			await ctx.author.remove_roles(role_bsf)
+			await ctx.author.remove_roles(role_smils)
+			await ctx.author.remove_roles(role_smisf)
+			await ctx.author.remove_roles(role_smilv)
+			await ctx.author.remove_roles(role_ash)
+			await ctx.author.remove_roles(role_rm)
+			await ctx.author.remove_roles(role_yk)
+			await ctx.author.remove_roles(role_lcn)
+			await ctx.author.remove_roles(role_wmc)
+			await ctx.author.send(f'Роль {role_blv}, была успешно выдана модератором! Роли других фракций были сняты')
+			await asyncio.sleep(60)
+			await yvedom.delete()
+			await ctx.message.delete()
+		else:
+			await ctx.send(f"{ctx.author.mention}, Ваш запрос на получение роли {role_blv.mention} был отклонен модератором, проверьте правильность ника. Пример ника - [Фракция] Prophet_Romanov [1]")
+			await ctx.author.send(f'{ctx.author}, Ваш запрос на получение роли {role_blv} был отклонен модератором, проверьте правильность ника. Пример ника - [Фракция] Prophet_Romanov [1]')
+			await asyncio.sleep(60)
+			await yvedom.delete()
+			await ctx.message.delete()
+	else:
+		pass
+
+@client.command()
+async def role_smils(ctx):
+	thhchannel = ctx.message.channel
+	ttttt = client.get_channel(741325950222073916)
+	rolestmoder = ctx.guild.get_role(703596629894365210)
+	role_lspd = ctx.guild.get_role(703596629860548643)
+	role_sfpd = ctx.guild.get_role(703596629860548642)
+	role_lvpd = ctx.guild.get_role(703596629860548641)
+	role_rcpd = ctx.guild.get_role(703596629860548640)
+	role_pravo = ctx.guild.get_role(703596629860548639)
+	role_cb = ctx.guild.get_role(703596629860548638)
+	role_lsa = ctx.guild.get_role(703596629856616457)
+	role_sfa = ctx.guild.get_role(703596629856616456)
+	role_hsp = ctx.guild.get_role(703596629856616455)
+	role_bls = ctx.guild.get_role(703596629856616454)
+	role_bsf = ctx.guild.get_role(703596629856616453)
+	role_blv = ctx.guild.get_role(703596629856616452)
+	role_smils = ctx.guild.get_role(703596629856616451)
+	role_smisf = ctx.guild.get_role(703596629856616450)
+	role_smilv = ctx.guild.get_role(703596629856616449)
+	role_ash = ctx.guild.get_role(703596629856616448)
+	role_rm = ctx.guild.get_role(703596629848096826)
+	role_yk = ctx.guild.get_role(703596629848096825)
+	role_lcn = ctx.guild.get_role(703596629848096824)
+	role_wmc = ctx.guild.get_role(703596629848096823)
+	if thhchannel == ttttt:
+		yvedom = await ctx.send(f'{ctx.author.mention} запрашивает роль {role_smils.mention} просьба рассмотреть {rolestmoder.mention} запрос максимально быстро!')
+		control_emojis = ["✅", "❎"]
+		for e in control_emojis:
+			await yvedom.add_reaction(e)
+
+
+		def check(reaction, user):
+			return user.bot == False  and reaction.message.id == yvedom.id and (str(reaction) in control_emojis) and rolestmoder in user.roles
+
+		reaction, user = await client.wait_for("reaction_add", check = check)
+
+		if str(reaction) == "✅":
+			await ctx.send(f"{ctx.author.mention}, Ваш запрос на получение роли {role_smils.mention} был одобрен! Роли других фракций были сняты.")
+			await ctx.author.add_roles(role_smils)
+			await ctx.author.remove_roles(role_sfpd)
+			await ctx.author.remove_roles(role_lvpd)
+			await ctx.author.remove_roles(role_lspd)
+			await ctx.author.remove_roles(role_rcpd)
+			await ctx.author.remove_roles(role_pravo)
+			await ctx.author.remove_roles(role_cb)
+			await ctx.author.remove_roles(role_lsa)
+			await ctx.author.remove_roles(role_sfa)
+			await ctx.author.remove_roles(role_hsp)
+			await ctx.author.remove_roles(role_bls)
+			await ctx.author.remove_roles(role_bsf)
+			await ctx.author.remove_roles(role_blv)
+			await ctx.author.remove_roles(role_smisf)
+			await ctx.author.remove_roles(role_smilv)
+			await ctx.author.remove_roles(role_ash)
+			await ctx.author.remove_roles(role_rm)
+			await ctx.author.remove_roles(role_yk)
+			await ctx.author.remove_roles(role_lcn)
+			await ctx.author.remove_roles(role_wmc)
+			await ctx.author.send(f'Роль {role_smils}, была успешно выдана модератором! Роли других фракций были сняты')
+			await asyncio.sleep(60)
+			await yvedom.delete()
+			await ctx.message.delete()
+		else:
+			await ctx.send(f"{ctx.author.mention}, Ваш запрос на получение роли {role_smils.mention} был отклонен модератором, проверьте правильность ника. Пример ника - [Фракция] Prophet_Romanov [1]")
+			await ctx.author.send(f'{ctx.author}, Ваш запрос на получение роли {role_smils} был отклонен модератором, проверьте правильность ника. Пример ника - [Фракция] Prophet_Romanov [1]')
+			await asyncio.sleep(60)
+			await yvedom.delete()
+			await ctx.message.delete()
+	else:
+		pass
+
+@client.command()
+async def role_smisf(ctx):
+	thhchannel = ctx.message.channel
+	ttttt = client.get_channel(741325950222073916)
+	rolestmoder = ctx.guild.get_role(703596629894365210)
+	role_lspd = ctx.guild.get_role(703596629860548643)
+	role_sfpd = ctx.guild.get_role(703596629860548642)
+	role_lvpd = ctx.guild.get_role(703596629860548641)
+	role_rcpd = ctx.guild.get_role(703596629860548640)
+	role_pravo = ctx.guild.get_role(703596629860548639)
+	role_cb = ctx.guild.get_role(703596629860548638)
+	role_lsa = ctx.guild.get_role(703596629856616457)
+	role_sfa = ctx.guild.get_role(703596629856616456)
+	role_hsp = ctx.guild.get_role(703596629856616455)
+	role_bls = ctx.guild.get_role(703596629856616454)
+	role_bsf = ctx.guild.get_role(703596629856616453)
+	role_blv = ctx.guild.get_role(703596629856616452)
+	role_smils = ctx.guild.get_role(703596629856616451)
+	role_smisf = ctx.guild.get_role(703596629856616450)
+	role_smilv = ctx.guild.get_role(703596629856616449)
+	role_ash = ctx.guild.get_role(703596629856616448)
+	role_rm = ctx.guild.get_role(703596629848096826)
+	role_yk = ctx.guild.get_role(703596629848096825)
+	role_lcn = ctx.guild.get_role(703596629848096824)
+	role_wmc = ctx.guild.get_role(703596629848096823)
+	if thhchannel == ttttt:
+		yvedom = await ctx.send(f'{ctx.author.mention} запрашивает роль {role_smisf.mention} просьба рассмотреть {rolestmoder.mention} запрос максимально быстро!')
+		control_emojis = ["✅", "❎"]
+		for e in control_emojis:
+			await yvedom.add_reaction(e)
+
+
+		def check(reaction, user):
+			return user.bot == False  and reaction.message.id == yvedom.id and (str(reaction) in control_emojis) and rolestmoder in user.roles
+
+		reaction, user = await client.wait_for("reaction_add", check = check)
+
+		if str(reaction) == "✅":
+			await ctx.send(f"{ctx.author.mention}, Ваш запрос на получение роли {role_smisf.mention} был одобрен! Роли других фракций были сняты.")
+			await ctx.author.add_roles(role_smisf)
+			await ctx.author.remove_roles(role_sfpd)
+			await ctx.author.remove_roles(role_lvpd)
+			await ctx.author.remove_roles(role_lspd)
+			await ctx.author.remove_roles(role_rcpd)
+			await ctx.author.remove_roles(role_pravo)
+			await ctx.author.remove_roles(role_cb)
+			await ctx.author.remove_roles(role_lsa)
+			await ctx.author.remove_roles(role_sfa)
+			await ctx.author.remove_roles(role_hsp)
+			await ctx.author.remove_roles(role_bls)
+			await ctx.author.remove_roles(role_bsf)
+			await ctx.author.remove_roles(role_blv)
+			await ctx.author.remove_roles(role_smils)
+			await ctx.author.remove_roles(role_smilv)
+			await ctx.author.remove_roles(role_ash)
+			await ctx.author.remove_roles(role_rm)
+			await ctx.author.remove_roles(role_yk)
+			await ctx.author.remove_roles(role_lcn)
+			await ctx.author.remove_roles(role_wmc)
+			await ctx.author.send(f'Роль {role_smisf}, была успешно выдана модератором! Роли других фракций были сняты')
+			await asyncio.sleep(60)
+			await yvedom.delete()
+			await ctx.message.delete()
+		else:
+			await ctx.send(f"{ctx.author.mention}, Ваш запрос на получение роли {role_smisf.mention} был отклонен модератором, проверьте правильность ника. Пример ника - [Фракция] Prophet_Romanov [1]")
+			await ctx.author.send(f'{ctx.author}, Ваш запрос на получение роли {role_smisf} был отклонен модератором, проверьте правильность ника. Пример ника - [Фракция] Prophet_Romanov [1]')
+			await asyncio.sleep(60)
+			await yvedom.delete()
+			await ctx.message.delete()
+	else:
+		pass
+
+@client.command()
+async def role_smilv(ctx):
+	thhchannel = ctx.message.channel
+	ttttt = client.get_channel(741325950222073916)
+	rolestmoder = ctx.guild.get_role(703596629894365210)
+	role_lspd = ctx.guild.get_role(703596629860548643)
+	role_sfpd = ctx.guild.get_role(703596629860548642)
+	role_lvpd = ctx.guild.get_role(703596629860548641)
+	role_rcpd = ctx.guild.get_role(703596629860548640)
+	role_pravo = ctx.guild.get_role(703596629860548639)
+	role_cb = ctx.guild.get_role(703596629860548638)
+	role_lsa = ctx.guild.get_role(703596629856616457)
+	role_sfa = ctx.guild.get_role(703596629856616456)
+	role_hsp = ctx.guild.get_role(703596629856616455)
+	role_bls = ctx.guild.get_role(703596629856616454)
+	role_bsf = ctx.guild.get_role(703596629856616453)
+	role_blv = ctx.guild.get_role(703596629856616452)
+	role_smils = ctx.guild.get_role(703596629856616451)
+	role_smisf = ctx.guild.get_role(703596629856616450)
+	role_smilv = ctx.guild.get_role(703596629856616449)
+	role_ash = ctx.guild.get_role(703596629856616448)
+	role_rm = ctx.guild.get_role(703596629848096826)
+	role_yk = ctx.guild.get_role(703596629848096825)
+	role_lcn = ctx.guild.get_role(703596629848096824)
+	role_wmc = ctx.guild.get_role(703596629848096823)
+	if thhchannel == ttttt:
+		yvedom = await ctx.send(f'{ctx.author.mention} запрашивает роль {role_smilv.mention} просьба рассмотреть {rolestmoder.mention} запрос максимально быстро!')
+		control_emojis = ["✅", "❎"]
+		for e in control_emojis:
+			await yvedom.add_reaction(e)
+
+
+		def check(reaction, user):
+			return user.bot == False  and reaction.message.id == yvedom.id and (str(reaction) in control_emojis) and rolestmoder in user.roles
+
+		reaction, user = await client.wait_for("reaction_add", check = check)
+
+		if str(reaction) == "✅":
+			await ctx.send(f"{ctx.author.mention}, Ваш запрос на получение роли {role_smilv.mention} был одобрен! Роли других фракций были сняты.")
+			await ctx.author.add_roles(role_smilv)
+			await ctx.author.remove_roles(role_sfpd)
+			await ctx.author.remove_roles(role_lvpd)
+			await ctx.author.remove_roles(role_lspd)
+			await ctx.author.remove_roles(role_rcpd)
+			await ctx.author.remove_roles(role_pravo)
+			await ctx.author.remove_roles(role_cb)
+			await ctx.author.remove_roles(role_lsa)
+			await ctx.author.remove_roles(role_sfa)
+			await ctx.author.remove_roles(role_hsp)
+			await ctx.author.remove_roles(role_bls)
+			await ctx.author.remove_roles(role_bsf)
+			await ctx.author.remove_roles(role_blv)
+			await ctx.author.remove_roles(role_smils)
+			await ctx.author.remove_roles(role_smisf)
+			await ctx.author.remove_roles(role_ash)
+			await ctx.author.remove_roles(role_rm)
+			await ctx.author.remove_roles(role_yk)
+			await ctx.author.remove_roles(role_lcn)
+			await ctx.author.remove_roles(role_wmc)
+			await ctx.author.send(f'Роль {role_smilv}, была успешно выдана модератором! Роли других фракций были сняты')
+			await asyncio.sleep(60)
+			await yvedom.delete()
+			await ctx.message.delete()
+		else:
+			await ctx.send(f"{ctx.author.mention}, Ваш запрос на получение роли {role_smilv.mention} был отклонен модератором, проверьте правильность ника. Пример ника - [Фракция] Prophet_Romanov [1]")
+			await ctx.author.send(f'{ctx.author}, Ваш запрос на получение роли {role_smilv} был отклонен модератором, проверьте правильность ника. Пример ника - [Фракция] Prophet_Romanov [1]')
+			await asyncio.sleep(60)
+			await yvedom.delete()
+			await ctx.message.delete()
+	else:
+		pass
+
+@client.command()
+async def role_ash(ctx):
+	thhchannel = ctx.message.channel
+	ttttt = client.get_channel(741325950222073916)
+	rolestmoder = ctx.guild.get_role(703596629894365210)
+	role_lspd = ctx.guild.get_role(703596629860548643)
+	role_sfpd = ctx.guild.get_role(703596629860548642)
+	role_lvpd = ctx.guild.get_role(703596629860548641)
+	role_rcpd = ctx.guild.get_role(703596629860548640)
+	role_pravo = ctx.guild.get_role(703596629860548639)
+	role_cb = ctx.guild.get_role(703596629860548638)
+	role_lsa = ctx.guild.get_role(703596629856616457)
+	role_sfa = ctx.guild.get_role(703596629856616456)
+	role_hsp = ctx.guild.get_role(703596629856616455)
+	role_bls = ctx.guild.get_role(703596629856616454)
+	role_bsf = ctx.guild.get_role(703596629856616453)
+	role_blv = ctx.guild.get_role(703596629856616452)
+	role_smils = ctx.guild.get_role(703596629856616451)
+	role_smisf = ctx.guild.get_role(703596629856616450)
+	role_smilv = ctx.guild.get_role(703596629856616449)
+	role_ash = ctx.guild.get_role(703596629856616448)
+	role_rm = ctx.guild.get_role(703596629848096826)
+	role_yk = ctx.guild.get_role(703596629848096825)
+	role_lcn = ctx.guild.get_role(703596629848096824)
+	role_wmc = ctx.guild.get_role(703596629848096823)
+	if thhchannel == ttttt:
+		yvedom = await ctx.send(f'{ctx.author.mention} запрашивает роль {role_ash.mention} просьба рассмотреть {rolestmoder.mention} запрос максимально быстро!')
+		control_emojis = ["✅", "❎"]
+		for e in control_emojis:
+			await yvedom.add_reaction(e)
+
+
+		def check(reaction, user):
+			return user.bot == False  and reaction.message.id == yvedom.id and (str(reaction) in control_emojis) and rolestmoder in user.roles
+
+		reaction, user = await client.wait_for("reaction_add", check = check)
+
+		if str(reaction) == "✅":
+			await ctx.send(f"{ctx.author.mention}, Ваш запрос на получение роли {role_ash.mention} был одобрен! Роли других фракций были сняты.")
+			await ctx.author.add_roles(role_ash)
+			await ctx.author.remove_roles(role_sfpd)
+			await ctx.author.remove_roles(role_lvpd)
+			await ctx.author.remove_roles(role_lspd)
+			await ctx.author.remove_roles(role_rcpd)
+			await ctx.author.remove_roles(role_pravo)
+			await ctx.author.remove_roles(role_cb)
+			await ctx.author.remove_roles(role_lsa)
+			await ctx.author.remove_roles(role_sfa)
+			await ctx.author.remove_roles(role_hsp)
+			await ctx.author.remove_roles(role_bls)
+			await ctx.author.remove_roles(role_bsf)
+			await ctx.author.remove_roles(role_blv)
+			await ctx.author.remove_roles(role_smils)
+			await ctx.author.remove_roles(role_smisf)
+			await ctx.author.remove_roles(role_smilv)
+			await ctx.author.remove_roles(role_rm)
+			await ctx.author.remove_roles(role_yk)
+			await ctx.author.remove_roles(role_lcn)
+			await ctx.author.remove_roles(role_wmc)
+			await ctx.author.send(f'Роль {role_ash}, была успешно выдана модератором! Роли других фракций были сняты')
+			await asyncio.sleep(60)
+			await yvedom.delete()
+			await ctx.message.delete()
+		else:
+			await ctx.send(f"{ctx.author.mention}, Ваш запрос на получение роли {role_ash.mention} был отклонен модератором, проверьте правильность ника. Пример ника - [Фракция] Prophet_Romanov [1]")
+			await ctx.author.send(f'{ctx.author}, Ваш запрос на получение роли {role_ash} был отклонен модератором, проверьте правильность ника. Пример ника - [Фракция] Prophet_Romanov [1]')
+			await asyncio.sleep(60)
+			await yvedom.delete()
+			await ctx.message.delete()
+	else:
+		pass
+
+@client.command()
+async def role_rm(ctx):
+	thhchannel = ctx.message.channel
+	ttttt = client.get_channel(741325950222073916)
+	rolestmoder = ctx.guild.get_role(703596629894365210)
+	role_lspd = ctx.guild.get_role(703596629860548643)
+	role_sfpd = ctx.guild.get_role(703596629860548642)
+	role_lvpd = ctx.guild.get_role(703596629860548641)
+	role_rcpd = ctx.guild.get_role(703596629860548640)
+	role_pravo = ctx.guild.get_role(703596629860548639)
+	role_cb = ctx.guild.get_role(703596629860548638)
+	role_lsa = ctx.guild.get_role(703596629856616457)
+	role_sfa = ctx.guild.get_role(703596629856616456)
+	role_hsp = ctx.guild.get_role(703596629856616455)
+	role_bls = ctx.guild.get_role(703596629856616454)
+	role_bsf = ctx.guild.get_role(703596629856616453)
+	role_blv = ctx.guild.get_role(703596629856616452)
+	role_smils = ctx.guild.get_role(703596629856616451)
+	role_smisf = ctx.guild.get_role(703596629856616450)
+	role_smilv = ctx.guild.get_role(703596629856616449)
+	role_ash = ctx.guild.get_role(703596629856616448)
+	role_rm = ctx.guild.get_role(703596629848096826)
+	role_yk = ctx.guild.get_role(703596629848096825)
+	role_lcn = ctx.guild.get_role(703596629848096824)
+	role_wmc = ctx.guild.get_role(703596629848096823)
+	if thhchannel == ttttt:
+		yvedom = await ctx.send(f'{ctx.author.mention} запрашивает роль {role_rm.mention} просьба рассмотреть {rolestmoder.mention} запрос максимально быстро!')
+		control_emojis = ["✅", "❎"]
+		for e in control_emojis:
+			await yvedom.add_reaction(e)
+
+
+		def check(reaction, user):
+			return user.bot == False  and reaction.message.id == yvedom.id and (str(reaction) in control_emojis) and rolestmoder in user.roles
+
+		reaction, user = await client.wait_for("reaction_add", check = check)
+
+		if str(reaction) == "✅":
+			await ctx.send(f"{ctx.author.mention}, Ваш запрос на получение роли {role_rm.mention} был одобрен! Роли других фракций были сняты.")
+			await ctx.author.add_roles(role_rm)
+			await ctx.author.remove_roles(role_sfpd)
+			await ctx.author.remove_roles(role_lvpd)
+			await ctx.author.remove_roles(role_lspd)
+			await ctx.author.remove_roles(role_rcpd)
+			await ctx.author.remove_roles(role_pravo)
+			await ctx.author.remove_roles(role_cb)
+			await ctx.author.remove_roles(role_lsa)
+			await ctx.author.remove_roles(role_sfa)
+			await ctx.author.remove_roles(role_hsp)
+			await ctx.author.remove_roles(role_bls)
+			await ctx.author.remove_roles(role_bsf)
+			await ctx.author.remove_roles(role_blv)
+			await ctx.author.remove_roles(role_smils)
+			await ctx.author.remove_roles(role_smisf)
+			await ctx.author.remove_roles(role_smilv)
+			await ctx.author.remove_roles(role_ash)
+			await ctx.author.remove_roles(role_yk)
+			await ctx.author.remove_roles(role_lcn)
+			await ctx.author.remove_roles(role_wmc)
+			await ctx.author.send(f'Роль {role_rm}, была успешно выдана модератором! Роли других фракций были сняты')
+			await asyncio.sleep(60)
+			await yvedom.delete()
+			await ctx.message.delete()
+		else:
+			await ctx.send(f"{ctx.author.mention}, Ваш запрос на получение роли {role_rm.mention} был отклонен модератором, проверьте правильность ника. Пример ника - [Фракция] Prophet_Romanov [1]")
+			await ctx.author.send(f'{ctx.author}, Ваш запрос на получение роли {role_rm} был отклонен модератором, проверьте правильность ника. Пример ника - [Фракция] Prophet_Romanov [1]')
+			await asyncio.sleep(60)
+			await yvedom.delete()
+			await ctx.message.delete()
+	else:
+		pass
+
+@client.command()
+async def role_yk(ctx):
+	thhchannel = ctx.message.channel
+	ttttt = client.get_channel(741325950222073916)
+	rolestmoder = ctx.guild.get_role(703596629894365210)
+	role_lspd = ctx.guild.get_role(703596629860548643)
+	role_sfpd = ctx.guild.get_role(703596629860548642)
+	role_lvpd = ctx.guild.get_role(703596629860548641)
+	role_rcpd = ctx.guild.get_role(703596629860548640)
+	role_pravo = ctx.guild.get_role(703596629860548639)
+	role_cb = ctx.guild.get_role(703596629860548638)
+	role_lsa = ctx.guild.get_role(703596629856616457)
+	role_sfa = ctx.guild.get_role(703596629856616456)
+	role_hsp = ctx.guild.get_role(703596629856616455)
+	role_bls = ctx.guild.get_role(703596629856616454)
+	role_bsf = ctx.guild.get_role(703596629856616453)
+	role_blv = ctx.guild.get_role(703596629856616452)
+	role_smils = ctx.guild.get_role(703596629856616451)
+	role_smisf = ctx.guild.get_role(703596629856616450)
+	role_smilv = ctx.guild.get_role(703596629856616449)
+	role_ash = ctx.guild.get_role(703596629856616448)
+	role_rm = ctx.guild.get_role(703596629848096826)
+	role_yk = ctx.guild.get_role(703596629848096825)
+	role_lcn = ctx.guild.get_role(703596629848096824)
+	role_wmc = ctx.guild.get_role(703596629848096823)
+	if thhchannel == ttttt:
+		yvedom = await ctx.send(f'{ctx.author.mention} запрашивает роль {role_yk.mention} просьба рассмотреть {rolestmoder.mention} запрос максимально быстро!')
+		control_emojis = ["✅", "❎"]
+		for e in control_emojis:
+			await yvedom.add_reaction(e)
+
+
+		def check(reaction, user):
+			return user.bot == False  and reaction.message.id == yvedom.id and (str(reaction) in control_emojis) and rolestmoder in user.roles
+
+		reaction, user = await client.wait_for("reaction_add", check = check)
+
+		if str(reaction) == "✅":
+			await ctx.send(f"{ctx.author.mention}, Ваш запрос на получение роли {role_yk.mention} был одобрен! Роли других фракций были сняты.")
+			await ctx.author.add_roles(role_yk)
+			await ctx.author.remove_roles(role_sfpd)
+			await ctx.author.remove_roles(role_lvpd)
+			await ctx.author.remove_roles(role_lspd)
+			await ctx.author.remove_roles(role_rcpd)
+			await ctx.author.remove_roles(role_pravo)
+			await ctx.author.remove_roles(role_cb)
+			await ctx.author.remove_roles(role_lsa)
+			await ctx.author.remove_roles(role_sfa)
+			await ctx.author.remove_roles(role_hsp)
+			await ctx.author.remove_roles(role_bls)
+			await ctx.author.remove_roles(role_bsf)
+			await ctx.author.remove_roles(role_blv)
+			await ctx.author.remove_roles(role_smils)
+			await ctx.author.remove_roles(role_smisf)
+			await ctx.author.remove_roles(role_smilv)
+			await ctx.author.remove_roles(role_ash)
+			await ctx.author.remove_roles(role_rm)
+			await ctx.author.remove_roles(role_lcn)
+			await ctx.author.remove_roles(role_wmc)
+			await ctx.author.send(f'Роль {role_yk}, была успешно выдана модератором! Роли других фракций были сняты')
+			await asyncio.sleep(60)
+			await yvedom.delete()
+			await ctx.message.delete()
+		else:
+			await ctx.send(f"{ctx.author.mention}, Ваш запрос на получение роли {role_yk.mention} был отклонен модератором, проверьте правильность ника. Пример ника - [Фракция] Prophet_Romanov [1]")
+			await ctx.author.send(f'{ctx.author}, Ваш запрос на получение роли {role_yk} был отклонен модератором, проверьте правильность ника. Пример ника - [Фракция] Prophet_Romanov [1]')
+			await asyncio.sleep(60)
+			await yvedom.delete()
+			await ctx.message.delete()
+	else:
+		pass
+
+@client.command()
+async def role_lcn(ctx):
+	thhchannel = ctx.message.channel
+	ttttt = client.get_channel(741325950222073916)
+	rolestmoder = ctx.guild.get_role(703596629894365210)
+	role_lspd = ctx.guild.get_role(703596629860548643)
+	role_sfpd = ctx.guild.get_role(703596629860548642)
+	role_lvpd = ctx.guild.get_role(703596629860548641)
+	role_rcpd = ctx.guild.get_role(703596629860548640)
+	role_pravo = ctx.guild.get_role(703596629860548639)
+	role_cb = ctx.guild.get_role(703596629860548638)
+	role_lsa = ctx.guild.get_role(703596629856616457)
+	role_sfa = ctx.guild.get_role(703596629856616456)
+	role_hsp = ctx.guild.get_role(703596629856616455)
+	role_bls = ctx.guild.get_role(703596629856616454)
+	role_bsf = ctx.guild.get_role(703596629856616453)
+	role_blv = ctx.guild.get_role(703596629856616452)
+	role_smils = ctx.guild.get_role(703596629856616451)
+	role_smisf = ctx.guild.get_role(703596629856616450)
+	role_smilv = ctx.guild.get_role(703596629856616449)
+	role_ash = ctx.guild.get_role(703596629856616448)
+	role_rm = ctx.guild.get_role(703596629848096826)
+	role_yk = ctx.guild.get_role(703596629848096825)
+	role_lcn = ctx.guild.get_role(703596629848096824)
+	role_wmc = ctx.guild.get_role(703596629848096823)
+	if thhchannel == ttttt:
+		yvedom = await ctx.send(f'{ctx.author.mention} запрашивает роль {role_lcn.mention} просьба рассмотреть {rolestmoder.mention} запрос максимально быстро!')
+		control_emojis = ["✅", "❎"]
+		for e in control_emojis:
+			await yvedom.add_reaction(e)
+
+
+		def check(reaction, user):
+			return user.bot == False  and reaction.message.id == yvedom.id and (str(reaction) in control_emojis) and rolestmoder in user.roles
+
+		reaction, user = await client.wait_for("reaction_add", check = check)
+
+		if str(reaction) == "✅":
+			await ctx.send(f"{ctx.author.mention}, Ваш запрос на получение роли {role_lcn.mention} был одобрен! Роли других фракций были сняты.")
+			await ctx.author.add_roles(role_lcn)
+			await ctx.author.remove_roles(role_sfpd)
+			await ctx.author.remove_roles(role_lvpd)
+			await ctx.author.remove_roles(role_lspd)
+			await ctx.author.remove_roles(role_rcpd)
+			await ctx.author.remove_roles(role_pravo)
+			await ctx.author.remove_roles(role_cb)
+			await ctx.author.remove_roles(role_lsa)
+			await ctx.author.remove_roles(role_sfa)
+			await ctx.author.remove_roles(role_hsp)
+			await ctx.author.remove_roles(role_bls)
+			await ctx.author.remove_roles(role_bsf)
+			await ctx.author.remove_roles(role_blv)
+			await ctx.author.remove_roles(role_smils)
+			await ctx.author.remove_roles(role_smisf)
+			await ctx.author.remove_roles(role_smilv)
+			await ctx.author.remove_roles(role_ash)
+			await ctx.author.remove_roles(role_rm)
+			await ctx.author.remove_roles(role_yk)
+			await ctx.author.remove_roles(role_wmc)
+			await ctx.author.send(f'Роль {role_lcn}, была успешно выдана модератором! Роли других фракций были сняты')
+			await asyncio.sleep(60)
+			await yvedom.delete()
+			await ctx.message.delete()
+		else:
+			await ctx.send(f"{ctx.author.mention}, Ваш запрос на получение роли {role_lcn.mention} был отклонен модератором, проверьте правильность ника. Пример ника - [Фракция] Prophet_Romanov [1]")
+			await ctx.author.send(f'{ctx.author}, Ваш запрос на получение роли {role_lcn} был отклонен модератором, проверьте правильность ника. Пример ника - [Фракция] Prophet_Romanov [1]')
+			await asyncio.sleep(60)
+			await yvedom.delete()
+			await ctx.message.delete()
+	else:
+		pass
+
+@client.command()
+async def role_wmc(ctx):
+	thhchannel = ctx.message.channel
+	ttttt = client.get_channel(741325950222073916)
+	rolestmoder = ctx.guild.get_role(703596629894365210)
+	role_lspd = ctx.guild.get_role(703596629860548643)
+	role_sfpd = ctx.guild.get_role(703596629860548642)
+	role_lvpd = ctx.guild.get_role(703596629860548641)
+	role_rcpd = ctx.guild.get_role(703596629860548640)
+	role_pravo = ctx.guild.get_role(703596629860548639)
+	role_cb = ctx.guild.get_role(703596629860548638)
+	role_lsa = ctx.guild.get_role(703596629856616457)
+	role_sfa = ctx.guild.get_role(703596629856616456)
+	role_hsp = ctx.guild.get_role(703596629856616455)
+	role_bls = ctx.guild.get_role(703596629856616454)
+	role_bsf = ctx.guild.get_role(703596629856616453)
+	role_blv = ctx.guild.get_role(703596629856616452)
+	role_smils = ctx.guild.get_role(703596629856616451)
+	role_smisf = ctx.guild.get_role(703596629856616450)
+	role_smilv = ctx.guild.get_role(703596629856616449)
+	role_ash = ctx.guild.get_role(703596629856616448)
+	role_rm = ctx.guild.get_role(703596629848096826)
+	role_yk = ctx.guild.get_role(703596629848096825)
+	role_lcn = ctx.guild.get_role(703596629848096824)
+	role_wmc = ctx.guild.get_role(703596629848096823)
+	if thhchannel == ttttt:
+		yvedom = await ctx.send(f'{ctx.author.mention} запрашивает роль {role_wmc.mention} просьба рассмотреть {rolestmoder.mention} запрос максимально быстро!')
+		control_emojis = ["✅", "❎"]
+		for e in control_emojis:
+			await yvedom.add_reaction(e)
+
+
+		def check(reaction, user):
+			return user.bot == False  and reaction.message.id == yvedom.id and (str(reaction) in control_emojis) and rolestmoder in user.roles
+
+		reaction, user = await client.wait_for("reaction_add", check = check)
+
+		if str(reaction) == "✅":
+			await ctx.send(f"{ctx.author.mention}, Ваш запрос на получение роли {role_wmc.mention} был одобрен! Роли других фракций были сняты.")
+			await ctx.author.add_roles(role_wmc)
+			await ctx.author.remove_roles(role_sfpd)
+			await ctx.author.remove_roles(role_lvpd)
+			await ctx.author.remove_roles(role_lspd)
+			await ctx.author.remove_roles(role_rcpd)
+			await ctx.author.remove_roles(role_pravo)
+			await ctx.author.remove_roles(role_cb)
+			await ctx.author.remove_roles(role_lsa)
+			await ctx.author.remove_roles(role_sfa)
+			await ctx.author.remove_roles(role_hsp)
+			await ctx.author.remove_roles(role_bls)
+			await ctx.author.remove_roles(role_bsf)
+			await ctx.author.remove_roles(role_blv)
+			await ctx.author.remove_roles(role_smils)
+			await ctx.author.remove_roles(role_smisf)
+			await ctx.author.remove_roles(role_smilv)
+			await ctx.author.remove_roles(role_ash)
+			await ctx.author.remove_roles(role_rm)
+			await ctx.author.remove_roles(role_yk)
+			await ctx.author.remove_roles(role_lcn)
+			await ctx.author.send(f'Роль {role_wmc}, была успешно выдана модератором! Роли других фракций были сняты')
+			await asyncio.sleep(60)
+			await yvedom.delete()
+			await ctx.message.delete()
+		else:
+			await ctx.send(f"{ctx.author.mention}, Ваш запрос на получение роли {role_wmc.mention} был отклонен модератором, проверьте правильность ника. Пример ника - [Фракция] Prophet_Romanov [1]")
+			await ctx.author.send(f'{ctx.author}, Ваш запрос на получение роли {role_wmc} был отклонен модератором, проверьте правильность ника. Пример ника - [Фракция] Prophet_Romanov [1]')
+			await asyncio.sleep(60)
+			await yvedom.delete()
+			await ctx.message.delete()
+	else:
+		pass
