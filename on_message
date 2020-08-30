@@ -1,0 +1,11 @@
+@client.event
+async def on_message(message):
+	role2 = message.guild.get_role(704595333589499985)
+	thhchannel = message.channel
+	ttttt = client.get_channel(744352370720374867)
+	if thhchannel == ttttt:
+		await message.add_reaction('✅')
+		await message.add_reaction('❎')
+	elif role2 in message.author.roles:
+		await message.add_reaction("<:boosts:741690199771447367>")
+	await client.process_commands(message)
